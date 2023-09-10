@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./CSS/theme.css" />
+    <link rel="stylesheet" href="./CSS/base.css" />
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <link rel="stylesheet" href="./CSS/pages.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      class="folio-meta web-1"
+      content="This site is a static landing page for a mock Web Development Agency. This site shows my skill in designing a clean layout that is visually appealing to users."
+      data-href="https://code-rad-mu.vercel.app/"
+    />
+    <meta
+      class="folio-meta web-4"
+      content="This site showcases my ability to create a landing page with a clean UI and responsive design, optimized for mobile and tablet screen sizes."
+      data-href="https://saas-website-gamma.vercel.app/"
+    />
+    <meta
+      class="folio-meta app-1"
+      content="Utilizing PokeAPI, I created this site that displays the first 151 Pokemon. The user is able to apply filters and store their favorite Pokemon in a list. This site was built in a Vanilla framework."
+      data-href="https://og-pokemon.vercel.app/"
+    />
+    <meta
+      class="folio-meta app-2"
+      content="This React.js application allows a user to input their information regarding their debt and see a full breakdown of the payments required to pay off debt. The app also allows the user to make a payment to recalculate their debt breakdown."
+      data-href="https://debt-calculator-eta.vercel.app//"
+    />
+    <meta
+      class="folio-meta ui-1"
+      content="This vanilla landing page is an exact replica of the Google search landing page. This shows my ability to take a design and translate it into code."
+      data-href="https://google-page-replica.vercel.app/"
+    />
+    <meta
+      class="folio-meta ui-2"
+      content="This site is a landing page for a mock skate shop showcasing my skills in UI and mobile responsive design."
+      data-href="https://skate-rad.vercel.app/"
+    />
+    <title>SGV - Riot Media</title>
+  </head>
+  <body>
+    <div id="theme-panel" class="theme-panel">
+      <div class="theme-body">
+        <span>Change Theme</span>
+        <div class="btn-group">
+          <button data-toggle="light" class="switcher-btn active">Light</button>
+          <button data-toggle="dark" class="switcher-btn">Dark</button>
+        </div>
+        <button id="theme-tab" class="theme-tab">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+      </div>
+    </div>
+    <main class="site-wrapper">
+      <header class="site-header">
+        <nav class="navbar">
+          <div class="brand-logo">
+            <a href="index.html"><h2>Saxton Grey Vasquez</h2></a>
+          </div>
+          <div class="navbar-nav">
+            <button id="menu-button">Menu</button>
+            <ul class="ul-defaults-none main-menu">
+              <li class="nav-item">Home</li>
+              <li class="nav-item" data-open="about">About Me</li>
+              <li class="nav-item" data-open="contact">Contact</li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- HERO Section -->
+      <section class="hero-section">
+        <div class="container hero-bg">
+          <div class="hero-content">
+            <div class="code-icon">
+              <img
+                src="./assets/thumbnails/riotMedia.png"
+                alt="Riot Media Logo"
+              />
+            </div>
+            <h2 class="header-lg">
+              <ul class="ul-defaults-none title-filter">
+                <li>Front-End Web</li>
+                <li>Ux/Ui Specialist</li>
+                <li>Design Specialist</li>
+              </ul>
+            </h2>
+            <div class="sub-header">
+              I create meaningful solutions for your brands and products.
+              <br />
+              Give your customers the best experience possible.
+            </div>
+            <div>
+              <a href="#" data-open="contact" class="btn btn-primary round-pill"
+                >Let's Talk Now</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section class="portfolio-section">
+        <div class="container search-container">
+          <label for="search">
+            <input
+              autocomplete="off"
+              id="search"
+              type="text"
+              class="search-input"
+              placeholder="Search..."
+            />
+            <i class="fas fa-search"></i>
+          </label>
+          <ul class="portfolio-filter-nav ul-defaults-none">
+            <li data-filter="all" class="filter-link">All Work</li>
+            <li data-filter="web" class="filter-link">Web Development</li>
+            <li data-filter="app" class="filter-link">App Development</li>
+            <li data-filter="ui" class="filter-link">UI Design</li>
+          </ul>
+        </div>
+        <div class="portfolio-grid"></div>
+      </section>
+      <!-- Review Section -->
+      <section class="reviews">
+        <div class="review-title">What People Say</div>
+        <h2 class="header-md">Trusted by Clients.</h2>
+        <div class="review-preview">
+          <img src="./assets/images/cube.png" alt="Cube" />
+        </div>
+
+        <div class="review-carousel">
+          <div class="review-item">
+            <div class="review-text">
+              #1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+            <div class="review-author">
+              <div class="avatar">
+                <img src="./assets/images/ava-1.jpg" alt="avatar" />
+              </div>
+              <div class="details">
+                <div class="name">Elizabeth Vasquez</div>
+                <div class="company">Propagated Perfection</div>
+              </div>
+            </div>
+          </div>
+          <div class="review-item">
+            <div class="review-text">
+              #2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+            <div class="review-author">
+              <div class="avatar">
+                <img src="./assets/images/ava-1.jpg" alt="avatar" />
+              </div>
+              <div class="details">
+                <div class="name">Jon Higger</div>
+                <div class="company">Devslopes Academy</div>
+              </div>
+            </div>
+          </div>
+          <div class="review-item">
+            <div class="review-text">
+              #3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+            <div class="review-author">
+              <div class="avatar">
+                <img src="./assets/images/ava-1.jpg" alt="avatar" />
+              </div>
+              <div class="details">
+                <div class="name">Jason Brewer</div>
+                <div class="company">Skate World Wide</div>
+              </div>
+            </div>
+          </div>
+          <div class="review-item">
+            <div class="review-text">
+              #4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+            <div class="review-author">
+              <div class="avatar">
+                <img src="./assets/images/ava-1.jpg" alt="avatar" />
+              </div>
+              <div class="details">
+                <div class="name">Bob Ross</div>
+                <div class="company">Happy Accidents</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide-ctrl-container">
+          <button>
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <button>
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </section>
+      <!-- Modals -->
+      <!-- About Page Modal -->
+      <div
+        id="about"
+        class="full-site-modal page-block"
+        data-animation="zoomInOut"
+      >
+        <div class="container-fluid">
+          <header class="modal-header">
+            <h3>ABOUT PAGE</h3>
+            <i class="fas fa-times" data-close=""></i>
+          </header>
+          <div class="modal-body">
+            <div class="img-wrapper">
+              <img src="./assets/images/profess_headshot.jpg" alt="Headshot" />
+            </div>
+            <div class="about-text">
+              <h2 class="header-md">Saxton Grey Vasquez</h2>
+              <h4 class="sub-header">Founder @ Riot Media</h4>
+              <p>
+                Front-End Developer based in Dallas, Texas. Dedicating my skills
+                to help bring ideas to life.
+              </p>
+              <p>
+                With an expertise in design and layout, I'm prepared to work
+                with you on creating the perfect brand image and user experience
+                to suit your vision.
+              </p>
+              <div class="contact-me-block">
+                <div>Email Me:</div>
+                <a href="mailto:saxton@riotmedia.co">Saxton@RiotMedia.Co</a>
+              </div>
+            </div>
+          </div>
+          <div class="marquee">
+            <ul class="marquee-content">
+              <li><i class="fab fa-github"></i></li>
+              <li><i class="fab fa-codepen"></i></li>
+              <li><i class="fab fa-dev"></i></li>
+              <li><i class="fab fa-react"></i></li>
+              <li><i class="fab fa-vuejs"></i></li>
+              <li><i class="fab fa-angular"></i></li>
+              <li><i class="fab fa-node"></i></li>
+              <li><i class="fab fa-aws"></i></li>
+              <li><i class="fab fa-docker"></i></li>
+              <li><i class="fab fa-android"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--Contact Page Modal  -->
+      <div
+        id="contact"
+        class="full-site-modal page-block"
+        data-animation="zoomInOut"
+      >
+        <div class="container-fluid">
+          <header class="modal-header">
+            <h3>CONTACT PAGE</h3>
+            <i class="fas fa-times" data-close></i>
+          </header>
+          <div class="modal-body">
+            <div class="contact-text">
+              <h2 class="header-md">Saxton Vasquez</h2>
+              <div>Have a project or question? Send me a message.</div>
+              <div>I will reply within 48 hours.</div>
+            </div>
+            <form class="folio-form">
+              <input
+                class="form-control"
+                id="form-name"
+                name="name"
+                type="text"
+                placeholder="Name"
+              />
+              <input
+                class="form-control"
+                id="form-email"
+                name="email"
+                type="email"
+                placeholder="Email"
+              />
+              <input
+                class="form-control"
+                id="form-subject"
+                name="subject"
+                type="text"
+                placeholder="Subject"
+              />
+              <textarea
+                class="form-control"
+                id="form-message"
+                name="message"
+                cols="30"
+                rows="3"
+                placeholder="Write your message..."
+              ></textarea>
+              <input
+                type="submit"
+                id="form-submit"
+                value="Send"
+                class="btn btn-primary round-pill"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Popup Modals -->
+      <!-- <div id="web-1" class="modal" data-animation="slideInOutTop">
+      <div class="modal-dialog">
+        <header class="modal-header">
+          <h3>Web Project 1</h3>
+          <i class="fas fa-times" data-close></i>
+        </header>
+        <div class="modal-body">
+          <div class="img-wrapper">
+            <img src="./assets/images/portfolio-1.jpg" alt="Portfolio Image">
+          </div>
+          <div class="text-wrapper">
+            <p><strong>My First Awesome Website</strong></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    --></main>
+    <script src="js/index.js"></script>
+    <script src="js/modals.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/titleFilter.js"></script>
+    <script src="js/form.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </body>
+</html>
