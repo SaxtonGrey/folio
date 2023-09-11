@@ -48,8 +48,12 @@ const popUpCreator = (id, title, paragraph, imageSrc) => {
   image.setAttribute("src", imageSrc);
   image.setAttribute("alt", "Portfolio Image");
 
+  const cta = document.createElement("p");
+  cta.textContent = "Click Image to View Site";
+
   // Append the image element to the image wrapper
   imgWrapper.appendChild(image);
+  imgWrapper.appendChild(cta);
   link.appendChild(imgWrapper);
 
   // Create the text wrapper element

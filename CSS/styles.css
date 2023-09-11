@@ -1,3 +1,11 @@
+.site-header {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  z-index: 10;
+  background-color: var(--bg);
+}
+
 #header-bg::before {
   background-image: linear-gradient();
 }
@@ -129,7 +137,7 @@
   align-items: center;
 }
 
-.brand-logo a h2 {
+.brand-logo h2 {
   font-size: 1.5rem;
   letter-spacing: 1.5px;
   line-height: 1.42;
@@ -265,8 +273,9 @@
   background-color: #cacaca56;
   right: 2px;
   border-radius: 10px;
-  padding: 5px;
   animation-name: fadeIn;
+  padding: 0;
+  top: 44px;
 }
 
 .menu-hidden {
@@ -382,6 +391,13 @@ div.modal {
   border-radius: 8px;
   object-fit: fill;
   height: 200px;
+  -webkit-box-shadow: -4px 7px 11px -2px rgba(0, 0, 0, 0.62);
+  -moz-box-shadow: -4px 7px 11px -2px rgba(0, 0, 0, 0.62);
+  box-shadow: -4px 7px 11px -2px rgba(0, 0, 0, 0.62);
+}
+
+.modal-body .img-wrapper p {
+  color: var(--color-text-base);
 }
 
 .modal-body .text-wrapper {
@@ -405,6 +421,10 @@ div.modal {
   margin: 0 1rem 1.85rem;
   max-width: 255px;
   width: 100%;
+  border-radius: 15px;
+  -webkit-box-shadow: -4px 7px 11px -2px rgba(0, 0, 0, 0.72);
+  -moz-box-shadow: -4px 7px 11px -2px rgba(0, 0, 0, 0.72);
+  box-shadow: -4px 7px 11px -2px rgba(0, 0, 0, 0.72);
 }
 
 .card-body img {
