@@ -224,7 +224,7 @@
 }
 
 .portfolio-filter-nav .filter-link.active {
-  color: #495fef;
+  color: var(--btn-border);
 }
 
 .navbar-nav {
@@ -270,7 +270,7 @@
   flex-direction: row;
   align-items: center;
   position: absolute;
-  background-color: #cacaca56;
+  background-color: #cacacac9;
   right: 2px;
   border-radius: 10px;
   animation-name: fadeIn;
@@ -286,16 +286,16 @@
   color: var(--color-text);
   font-family: "Inter", sans-serif;
   font-weight: 600;
+  font-size: 20px;
   letter-spacing: 2px;
   padding: 5px 10px;
   border-radius: 25%;
   border: none;
   background-color: transparent;
-  text-decoration: underline;
 }
 
 #menu-button:hover {
-  font-size: 16px;
+  color: var(--btn-border);
 }
 
 .menu-visible .nav-item {
@@ -407,7 +407,7 @@ div.modal {
 
 .hero-content {
   text-align: center;
-  padding: 5.5rem 0;
+  padding: 6.25rem 0;
 }
 .portfolio-grid {
   display: flex;
@@ -422,9 +422,9 @@ div.modal {
   max-width: 255px;
   width: 100%;
   border-radius: 15px;
-  -webkit-box-shadow: -4px 7px 11px -2px rgba(0, 0, 0, 0.72);
-  -moz-box-shadow: -4px 7px 11px -2px rgba(0, 0, 0, 0.72);
-  box-shadow: -4px 7px 11px -2px rgba(0, 0, 0, 0.72);
+  -webkit-box-shadow: -4px 7px 11px -2px var(--color-text);
+  -moz-box-shadow: -4px 7px 11px -2px var(--color-text);
+  box-shadow: -4px 7px 11px -2px var(--color-text);
 }
 
 .card-body img {

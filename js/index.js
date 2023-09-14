@@ -125,7 +125,7 @@ cardCreator(
 /* Portfolio */
 const filterLink = document.querySelectorAll(dataFilter);
 const portfolioItems = document.querySelectorAll(portfolioData);
-const searchBox = document.querySelector("#search");
+// const searchBox = document.querySelector("#search");
 
 const setActive = (elm, selector) => {
   if (document.querySelector(`${selector}.${active}`) !== null) {
@@ -175,7 +175,7 @@ for (const elm of switcher) {
 }
 
 // Portfolio Filter
-searchBox.addEventListener("keyup", (e) => {
+/* searchBox.addEventListener("keyup", (e) => {
   const searchInput = e.target.value.toLowerCase().trim();
   portfolioItems.forEach((card) => {
     if (card.dataset.item.includes(searchInput)) {
@@ -184,13 +184,12 @@ searchBox.addEventListener("keyup", (e) => {
       card.style.display = "none";
     }
   });
-});
+}); */
 
 for (const link of filterLink) {
   link.addEventListener("click", function() {
     setActive(link, ".filter-link");
     const filter = this.dataset.filter;
-    console.log(portfolioItems);
     portfolioItems.forEach((card) => {
       if (filter === "all") {
         card.style.display = "block";
