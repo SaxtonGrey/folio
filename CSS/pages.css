@@ -5,6 +5,7 @@
 #about.is-visible,
 #contact.is-visible {
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 #contact .modal-body,
