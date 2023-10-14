@@ -1,6 +1,7 @@
 :root {
   --bg: #fff;
-  --logo-bg: rgba(207, 207, 207, 0.247);
+  --header-bg: #eeeeee;
+  --logo-bg: rgba(179, 179, 179, 0.247);
   --bg-panel: #fff;
   --color-headings: #161c2d;
   --color-text-opacity: rgba(22, 28, 45, 0.7);
@@ -20,7 +21,8 @@
 
 [data-theme="dark"] {
   --bg: #171a23;
-  --logo-bg: rgba(110, 110, 110, 0.144);
+  --header-bg: #24242c;
+  --logo-bg: rgba(146, 146, 146, 0.144);
   --bg-panel: #f1f1f1;
   --color-headings: #fff;
   --color-text-opacity: rgba(255, 255, 255, 0.7);
