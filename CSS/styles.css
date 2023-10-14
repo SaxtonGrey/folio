@@ -153,11 +153,12 @@
 }
 
 .code-icon {
-  background: var(--logo-bg);
-  padding: 1.25rem 1.25rem;
-  border-radius: 50rem;
+  background: radial-gradient(circle, var(--logo-bg) 0%, transparent 90%);
   display: inline-block;
+  height: -moz-fit-content;
   height: fit-content;
+  width: -moz-available;
+  width: 100%;
   margin-bottom: 2.5rem;
   text-align: center;
 }
