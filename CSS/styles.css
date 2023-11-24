@@ -143,15 +143,12 @@
   line-height: 1.42;
 }
 
-.hero-section {
+.hero-content {
   background-image: url(../assets/images/hero-pattern.webp);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.hero-content {
   text-align: center;
   padding: 1.5rem 0;
 }

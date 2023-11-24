@@ -75,6 +75,22 @@ const cardCreator = (dtItem, dtOpen, imgSrc, header, content) => {
 /* End Card Creator */
 
 cardCreator(
+  "ui",
+  "ui-1",
+  "./assets/thumbnails/retrivia.png",
+  "Retrivia!",
+  "Retro Video Game Trivia App"
+);
+
+cardCreator(
+  "app",
+  "app-3",
+  "./assets/thumbnails/lotf-ts.png",
+  "Lord of The Forms",
+  "React.ts Form"
+);
+
+cardCreator(
   "web",
   "web-4",
   "./assets/thumbnails/SaaSProject.png",
@@ -104,14 +120,6 @@ cardCreator(
   "./assets/thumbnails/debtCalcTN.png",
   "Debt Calculator",
   "A React.js app to calculate your debt"
-);
-
-cardCreator(
-  "ui",
-  "ui-1",
-  "./assets/thumbnails/googlePage.png",
-  "Google Landing Site Replica",
-  "A Vanilla copy of the Google Landing Page"
 );
 
 cardCreator(
