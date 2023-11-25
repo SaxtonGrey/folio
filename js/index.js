@@ -92,7 +92,15 @@ cardCreator(
 
 cardCreator(
   "web",
-  "web-4",
+  "web-3",
+  "./assets/thumbnails/mw-homeservices.png",
+  "M&W Home Services",
+  "Site for Home Cleaning Service"
+);
+
+cardCreator(
+  "web",
+  "web-2",
   "./assets/thumbnails/SaaSProject.png",
   "Saas Website",
   "Landing Page for Mock SaaS Company"
