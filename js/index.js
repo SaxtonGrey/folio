@@ -91,8 +91,8 @@ cardCreator(
 );
 
 cardCreator(
-  "web",
-  "web-3",
+  "ui",
+  "ui-3",
   "./assets/thumbnails/mw-homeservices.png",
   "M&W Home Services",
   "Site for Home Cleaning Service"
