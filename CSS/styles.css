@@ -6,12 +6,12 @@
   background-color: var(--header-bg);
 }
 
-#header-bg::before {
+.hero-bg::before {
   background-image: linear-gradient();
 }
 
-#header-bg {
-  background-image: url(https://images.pexels.com/photos/1287145/pexels-photo-1287145.jpeg?auto=compress&cs=tinysrgb&w=1600);
+.hero-bg {
+  background-image: url(../assets/images/hero-pattern.webp);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -155,19 +155,19 @@
 
 .code-icon {
   background: radial-gradient(circle, var(--logo-bg) 0%, transparent 90%);
+  background-position: 50% 50%;
   display: inline-block;
   height: 235px;
   width: -moz-available;
   width: 100%;
   margin-bottom: 2.5rem;
   text-align: center;
-  padding-top: 15px;
 }
 
 .code-icon img {
   object-fit: contain;
   border-radius: 50rem;
-  max-width: 200px;
+  max-width: 250px;
 }
 
 .code-icon .fa-code {
