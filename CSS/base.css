@@ -55,10 +55,6 @@ button {
   outline: none;
 }
 
-#portfolio-section {
-  background-color: rgba(3, 3, 3, 0);
-}
-
 .container,
 .container-fluid {
   width: 100%;
